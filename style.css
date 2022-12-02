@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #f9ece2, #f0ccad);
+  font-family: "Lato", sans-serif;
+  cursor: default;
+}
+
+/*Navigation*/
+
+nav {
+  height: 7vh;
+  background-color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  width: 30%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  color: #d19053;
+  text-decoration: none;
+  display: block;
+  padding: 10px 35px;
+}
+.nav-links li a:hover {
+  background-color: #925924;
+  color: #fdd0a6;
+  border-radius: 30px;
+}
+
+/*Logo*/
+
+.myLogo {
+  margin-left: 1%;
+}
+
+.myLogo a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 7vh;
+  float: left;
+  font-family: "Lucy Rose";
+  text-decoration: none;
+  letter-spacing: -3px;
+  color: #d19053;
+  font-size: 2.1rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.myLogo a:hover {
+  color: #fdd0a6;
+}
+
+/*Name*/
+
+.animatedParagraph p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+  font-size: 2.4rem;
+  font-weight: 500;
+  word-spacing: 7px;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animatedParagraph span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.animatedParagraph span:nth-child(1) {
+  animation: fade-in 0.6s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animatedParagraph span:nth-child(2) {
+  animation: fade-in 0.6s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animatedParagraph span:nth-child(3) {
+  animation: fade-in 0.6s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animatedParagraph span:nth-child(4) {
+  animation: fade-in 0.6s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.myName {
+  font-family: "Lucy Rose";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5%;
+}
+
+.myName h1 {
+  background-image: url("https://media.giphy.com/media/OMIn8e6tIOPbO3f99A/giphy.gif");
+  background-size: contain;
+  background-position: center;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 4vh;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  font-size: 1.5rem;
+  margin-top: 4%;
+  margin-left: -1%;
+}
+
+.icons img {
+  width: 2.5rem;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+.icons span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.icons span:nth-child(1) {
+  animation: fade-in 0.7s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.icons span:nth-child(2) {
+  animation: fade-in 0.7s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.icons span:nth-child(3) {
+  animation: fade-in 0.7s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.icons span:nth-child(4) {
+  animation: fade-in 0.7s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.icons span:nth-child(5) {
+  animation: fade-in 0.7s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.icons span:nth-child(6) {
+  animation: fade-in 0.7s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.noshow {
+  display: none;
+}
+@media screen and (max-width: 1536px) {
+  .animatedParagraph p {
+    font-size: 2.5rem;
+    margin-top: 13%;
+  }
+  .myName h1 {
+    font-size: 7rem;
+  }
+  .icons {
+    font-size: 1.7rem;
+  }
+  .icons img {
+    width: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 1382px) {
+  .nav-links li a {
+    font-size: 1.4rem;
+  }
+
+  .myLogo a {
+    font-size: 1.8rem;
+  }
+
+  .animatedParagraph p {
+    font-size: 1.9rem;
+  }
+
+  .myName h1 {
+    font-size: 6rem;
+  }
+
+  .icons {
+    font-size: 1.3rem;
+  }
+  .icons img {
+    width: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    height: 8vh;
+  }
+
+  .nav-links li a {
+    font-size: 1.3rem;
+    padding: 10px 18px;
+  }
+
+  .nav-links li:nth-child(3) {
+    padding-right: 20px;
+  }
+  .myLogo a {
+    height: 8vh;
+    font-size: 1.7rem;
+  }
+  .animatedParagraph p {
+    font-size: 1.9rem;
+    margin-top: 18%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #d19053;
+    margin: 6px;
+  }
+
+  nav {
+    position: relative;
+    height: 8vh;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 25%;
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    clip-path: circle(50px at 90% -10%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links.open li:first-child {
+    margin-top: 30%;
+  }
+  .nav-links.open li:last-child {
+    padding-right: 0;
+  }
+  .nav-links li {
+    opacity: 0;
+    margin-top: 8%;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  ul.nav-links li a {
+    font-size: 1.7rem;
+    transition: 0.2s;
+  }
+
+  .nav-links li a:hover {
+    background-color: #925924;
+    color: #fdd0a6;
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+
+  .myLogo {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .animatedParagraph p {
+    margin-top: 20%;
+    font-size: 1.7rem;
+  }
+
+  .myName h1 {
+    margin-top: 1%;
+    font-size: 5rem;
+  }
+
+  .icons {
+    font-size: 1.2rem;
+  }
+  .icons img {
+    width: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .animatedParagraph p {
+    margin-top: 30%;
+    font-size: 1.5rem;
+  }
+
+  .myName h1 {
+    margin-top: 1%;
+    font-size: 4.4rem;
+  }
+
+  .icons {
+    font-size: 1.1rem;
+  }
+  .icons img {
+    width: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links.open li:first-child {
+    margin-top: 40%;
+  }
+
+  .animatedParagraph p {
+    font-size: 1.3rem;
+  }
+
+  .myName h1 {
+    font-size: 3.5rem;
+  }
+
+  .icons {
+    font-size: 0.8rem;
+  }
+  .icons img {
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .animatedParagraph p {
+    margin-top: 35%;
+    font-size: 1.1rem;
+  }
+
+  .myName h1 {
+    margin-top: 1%;
+    font-size: 2.6rem;
+  }
+
+  .icons {
+    font-size: 0.7rem;
+  }
+  .icons img {
+    width: 1.5rem;
+  }
+}

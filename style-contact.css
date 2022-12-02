@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #f9ece2, #f0ccad);
+  font-family: "Lato", sans-serif;
+}
+
+/*Navigation*/
+
+nav {
+  height: 7vh;
+  background-color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  width: 30%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  color: #d19053;
+  text-decoration: none;
+  display: block;
+  padding: 10px 35px;
+}
+.nav-links li a:hover {
+  background-color: #925924;
+  color: #fdd0a6;
+  border-radius: 30px;
+}
+
+/*LOGO*/
+
+.myLogo {
+  margin-left: 1%;
+}
+
+.myLogo a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 7vh;
+  float: left;
+  font-family: "Lucy Rose";
+  text-decoration: none;
+  letter-spacing: -3px;
+  color: #d19053;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.myLogo a:hover {
+  color: #fdd0a6;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+.noshow {
+  display: none;
+}
+
+/*Contact*/
+
+.head h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 900;
+  font-family: "Lucy Rose";
+}
+
+#contact h1 {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+#contact span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+#contact span:nth-child(1) {
+  animation: fade-in 0.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#contact span:nth-child(2) {
+  animation: fade-in 0.5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#contact span:nth-child(3) {
+  animation: fade-in 0.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#contact span:nth-child(4) {
+  animation: fade-in 0.5s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#contact span:nth-child(5) {
+  animation: fade-in 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#contact span:nth-child(6) {
+  animation: fade-in 0.5s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#contact span:nth-child(7) {
+  animation: fade-in 0.5s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+hr {
+  width: 60%;
+  height: 1px;
+  margin-bottom: 7px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  border-width: 1px;
+  border-color: #da812f;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(83, 38, 38, 0.884);
+  background-color: #d19053;
+  width: 30%;
+  margin: 5% auto;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transform: scale(0.94);
+  opacity: 0;
+  filter: blur(4px);
+  animation: fade-in 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.mail a {
+  color: black;
+  margin-top: 5%;
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+  animation: fade-in 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.fa-envelope {
+  background-color: #8d4808;
+  border-radius: 20%;
+  padding: 5px 15px;
+}
+
+.fa-envelope:hover {
+  box-shadow: 0px 0px 20px 1px rgba(83, 38, 38, 0.884);
+  background-color: #8d4808;
+}
+.mail p {
+  margin: 5%;
+  border-radius: 20px;
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+  animation: fade-in 0.5s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.icons {
+  max-width: 40%;
+  margin: 5% auto;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.icons a {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.icons a:nth-child(1) {
+  animation: fade-in 0.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.icons a:nth-child(2) {
+  animation: fade-in 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.fa-linkedin-in {
+  padding: 26px 27px;
+  box-shadow: 0 0px 19px 0 rgba(83, 38, 38, 0.884);
+  border-radius: 50%;
+  background-color: #8d4808;
+}
+
+.fa-linkedin-in:hover {
+  box-shadow: 0px 0px 20px 6px rgba(83, 38, 38, 0.884);
+}
+
+.fa-github {
+  padding: 17px 18px;
+  box-shadow: 0 0px 19px 0 rgba(83, 38, 38, 0.884);
+  border-radius: 50%;
+  background-color: #8d4808;
+}
+
+.fa-github:hover {
+  box-shadow: 0px 0px 20px 6px rgba(83, 38, 38, 0.884);
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1382px) {
+  .nav-links li a {
+    font-size: 1.4rem;
+  }
+
+  .myLogo a {
+    font-size: 1.8rem;
+  }
+
+  #contact {
+    margin-top: 3%;
+  }
+
+  .mail {
+    margin-top: 6%;
+    width: 40%;
+  }
+
+  .icons {
+    margin-top: 6%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    height: 8vh;
+  }
+
+  .nav-links li a {
+    font-size: 1.3rem;
+    padding: 10px 18px;
+  }
+
+  .nav-links li:nth-child(3) {
+    padding-right: 20px;
+  }
+  .myLogo a {
+    height: 8vh;
+    font-size: 1.7rem;
+  }
+  hr {
+    width: 80%;
+  }
+  .mail {
+    width: 50%;
+    margin-top: 8%;
+  }
+
+  .fa-envelope {
+    font-size: 5rem;
+    padding: 5px 15px;
+  }
+
+  .fa-linkedin-in {
+    font-size: 2.6em;
+  }
+
+  .fa-github {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #d19053;
+    margin: 6px;
+  }
+
+  nav {
+    position: relative;
+    height: 8vh;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 25%;
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    clip-path: circle(50px at 90% -10%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links.open li:first-child {
+    margin-top: 30%;
+  }
+  .nav-links.open li:last-child {
+    padding-right: 0;
+  }
+  .nav-links li {
+    opacity: 0;
+    margin-top: 8%;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  ul.nav-links li a {
+    font-size: 1.7rem;
+    transition: 0.2s;
+  }
+
+  .nav-links li a:hover {
+    background-color: #925924;
+    color: #fdd0a6;
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+  
+  .myLogo {
+    position: absolute;
+    z-index: 1;
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  .main h1 {
+    font-size: 2.1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main h1 {
+    font-size: 1.8rem;
+  }
+  hr {
+    width: 80%;
+  }
+  .mail {
+    width: 60%;
+    margin-top: 10%;
+  }
+  .icons {
+    margin-top: 10%;
+  }
+  .fa-envelope {
+    font-size: 4rem;
+    padding: 5px 15px;
+  }
+
+  .fa-linkedin-in {
+    font-size: 2rem;
+  }
+
+  .fa-github {
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links.open li:first-child {
+    margin-top: 40%;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .main h1 {
+    font-size: 1.7rem;
+  }
+  .mail {
+    width: 60%;
+    margin-top: 15%;
+  }
+  .mail p {
+    font-size: 1rem;
+  }
+  .icons {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .mail {
+    width: 80%;
+  }
+  .mail p {
+    font-size: 0.9rem;
+  }
+  .fa-envelope {
+    font-size: 3.2rem;
+  }
+
+  .fa-linkedin-in {
+    font-size: 1.5rem;
+  }
+
+  .fa-github {
+    font-size: 2.2em;
+  }
+  .icons {
+    margin-top: 16%;
+  }
+}

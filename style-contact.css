@@ -457,23 +457,11 @@ hr {
 
 @media screen and (max-width: 380px) {
   .mail {
-    width: 80%;
-  }
-  .mail p {
-    font-size: 0.9rem;
-  }
-  .fa-envelope {
-    font-size: 3.2rem;
-  }
+    width: 90%;
 
-  .fa-linkedin-in {
-    font-size: 1.5rem;
-  }
-
-  .fa-github {
-    font-size: 2.2em;
   }
   .icons {
-    margin-top: 16%;
+    margin-top: 20%;
+    gap: 1.2rem;
   }
 }
